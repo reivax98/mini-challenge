@@ -1,0 +1,24 @@
+<div class="container-fluid mt-5">
+  <div class="row justify-content-center">
+    <div class="col-6 table-responsive">
+      <table class="table table-bordered text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Carrera</th>
+            <th>Hobbie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of datos">
+            <td>{{d.nombre}}</td>
+            <td>{{d.edad}}</td>
+            <td>{{d.carrera}}</td>
+            <td>{{d.hobbie}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

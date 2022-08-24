@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <form>
+    <fieldset>
+      <legend><strong>Formulario</strong></legend>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)]="nombres" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellido" [(ngModel)]="apellidos" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" [(ngModel)]="correo" [ngModelOptions]="{standalone: true}">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="imprimir()">Submit</button>
+     </fieldset>
+  </form>
+</div>
